@@ -1,0 +1,34 @@
+[gd_scene load_steps=11 format=3 uid="uid://bh7jvp177e2r1"]
+
+[ext_resource type="Script" path="res://generer  terrain/terrain.gd" id="1_w1emc"]
+[ext_resource type="PackedScene" uid="uid://4pvo73s04sfi" path="res://case.tscn" id="3_fafe7"]
+[ext_resource type="Texture2D" uid="uid://b0amsfsskf7qa" path="res://@images/herbe.png" id="3_n04ho"]
+[ext_resource type="Texture2D" uid="uid://blgb7ky7dthua" path="res://@images/diplo.png" id="3_vu37g"]
+[ext_resource type="Texture2D" uid="uid://doy0tdvfp325o" path="res://@images/météorite.png" id="4_cux03"]
+[ext_resource type="Texture2D" uid="uid://byatounl8uq7" path="res://@images/Confiture.png" id="4_o413b"]
+[ext_resource type="Texture2D" uid="uid://cxv06m56chf4p" path="res://@images/Spaghetti.png" id="5_wf1vq"]
+[ext_resource type="Texture2D" uid="uid://buejp2jyugepq" path="res://@images/Trampoline.png" id="6_xvbmq"]
+[ext_resource type="Texture2D" uid="uid://bqm5t8s5hij0t" path="res://@images/Scooter.png" id="7_064ko"]
+[ext_resource type="Texture2D" uid="uid://c8cefwe77qjh7" path="res://@images/missile.png" id="7_x8gmk"]
+
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("meteoriteSprite", "diploSprite", "missileSprite")]
+z_index = 4095
+script = ExtResource("1_w1emc")
+herbeTerrain = ExtResource("3_fafe7")
+meteoriteSprite = NodePath("Meteorite")
+diploSprite = NodePath("Diplo")
+missileSprite = NodePath("Missile")
+terrain_textures = Array[Texture2D]([ExtResource("3_n04ho"), ExtResource("4_o413b"), ExtResource("5_wf1vq"), ExtResource("6_xvbmq"), ExtResource("7_064ko")])
+
+[node name="Diplo" type="Sprite2D" parent="."]
+z_index = 4096
+position = Vector2(44, 41)
+texture = ExtResource("3_vu37g")
+
+[node name="Meteorite" type="Sprite2D" parent="."]
+z_index = 1
+texture = ExtResource("4_cux03")
+
+[node name="Missile" type="Sprite2D" parent="."]
+z_index = 2
+texture = ExtResource("7_x8gmk")

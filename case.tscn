@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://4pvo73s04sfi"]
+
+[ext_resource type="Texture2D" uid="uid://b0amsfsskf7qa" path="res://@images/herbe.png" id="1_7bxls"]
+
+[node name="Herbe" type="Sprite2D"]
+position = Vector2(50, 50)
+texture = ExtResource("1_7bxls")
