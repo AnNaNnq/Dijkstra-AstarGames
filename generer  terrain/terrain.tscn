@@ -18,7 +18,7 @@ herbeTerrain = ExtResource("3_fafe7")
 meteoriteSprite = NodePath("Meteorite")
 diploSprite = NodePath("Diplo")
 missileSprite = NodePath("Missile")
-terrain_textures = Array[Texture2D]([ExtResource("3_n04ho"), ExtResource("4_o413b"), ExtResource("5_wf1vq"), ExtResource("6_xvbmq"), ExtResource("7_064ko")])
+terrain_textures = Array[CompressedTexture2D]([ExtResource("3_n04ho"), ExtResource("4_o413b"), ExtResource("5_wf1vq"), ExtResource("6_xvbmq"), ExtResource("7_064ko")])
 
 [node name="Diplo" type="Sprite2D" parent="."]
 z_index = 4096
