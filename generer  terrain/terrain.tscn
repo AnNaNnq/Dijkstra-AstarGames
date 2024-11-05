@@ -14,10 +14,10 @@
 [node name="Node2D" type="Node2D" node_paths=PackedStringArray("meteoriteSprite", "diploSprite", "missileSprite")]
 z_index = 4095
 script = ExtResource("1_w1emc")
-herbeTerrain = ExtResource("3_fafe7")
 meteoriteSprite = NodePath("Meteorite")
 diploSprite = NodePath("Diplo")
 missileSprite = NodePath("Missile")
+herbeTerrain = ExtResource("3_fafe7")
 terrain_textures = Array[CompressedTexture2D]([ExtResource("3_n04ho"), ExtResource("4_o413b"), ExtResource("5_wf1vq"), ExtResource("6_xvbmq"), ExtResource("7_064ko")])
 
 [node name="Diplo" type="Sprite2D" parent="."]
